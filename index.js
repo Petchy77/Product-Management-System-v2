@@ -62,7 +62,7 @@ app.put('/products/:id', async (req, res) => {
   }
 });
 
-// Delete an item by ID
+// Delete a product by ID
 app.delete('/products/:id', async (req, res) => {
   try {
     const deletedProduct = await Product.findByIdAndDelete(req.params.id);
